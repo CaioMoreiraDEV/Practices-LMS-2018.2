@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+.layout {
+    height: 100vh;
+    width: 900px;
+}
+
+.layout .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: 20px 10px;
+}
+
+.layout .header .logo {
+    text-decoration: none;
+    font-family: cursive;
+    padding: 0px 16px;
+    font-size: 16px;
+    cursor: default;
+    color: black;
+}
+
+.layout .header .navigation .button {
+    background-color: #4CAF50;
+    text-decoration: none;
+    text-align: center;
+    padding: 12px 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.layout .main {
+    display: flex;
+}
+
+.layout .container {
+    flex-grow: 7;
+    background-color: aliceblue;
+    margin: 3px 0 3px 5px;
+    height: 88vh;
+}
+
+.layout .aside {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: aliceblue;
+    margin: 3px 5px 3px 0;
+    height: 88vh;
+}
+
+.layout .main .aside .menu-type {
+    display: flex;
+    flex-direction: row;
+    height: 48px;
+}
+
+.layout .main .aside .menu-type .contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4CAF50;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-right: 1px;
+    padding: 12px;  
+    width: 50%;
+}
+
+.layout .main .aside .menu-type .groups {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4CAF50;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-left: 1px;
+    padding: 12px;
+    width: 50%;
+}
+
+.layout .main .aside .menu-add-type {
+    display: flex;
+    flex-direction: row;
+    bottom: 0px;
+    height: 48px;
+}
+
+.layout .main .aside .menu-add-type .add-contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4CAF50;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-right: 1px;
+    padding: 12px;  
+    width: 50%;
+}
+
+.layout .main .aside .menu-add-type .add-groups {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4CAF50;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-left: 1px;
+    padding: 12px;
+    width: 50%;
+}
+
+.layout .main .aside .aside-items {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.layout .main .aside .aside-items a:hover {
+    background-color: lightblue;
+}
+
+.layout .main .aside .aside-items .aside-item {
+    background-color: rgb(232, 232, 232);
+    box-sizing: border-box;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 12px 12px;
+    margin: 1px 0;
+    width: 100%;
+}
+
+.layout .main .aside .aside-items .aside-item .icon {
+    padding-right: 12px;
+}
+
+.layout .main .aside .aside-items .form-register {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-align: center;
+    cursor: default;
+    padding: 12px 12px;
+    margin: 1px 0;
+    width: 100%;
+}
+
+.layout .main .aside .aside-items .form-register input {
+    margin: 5px;
+}
+
+.layout .main .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.layout .main .container .heading {
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px;
+}
+
+.layout .main .container .send-message {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.layout .main .container .send-message .send {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 255, 0.664);
+    text-decoration: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.layout .main .container .send-message .message {
+    width: 100%;
+    padding: 0 8px;
+}
+
+.layout .main .container .chat {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    overflow-y: scroll;
+    background-color: white;
+    padding: 24px 24px;
+    height: 100%;
+}
+
+.layout .main .container .chat .item {
+    background-color: lightgreen;
+    border-radius: 10px 10px 0 10px;
+    font-family: cursive;
+    margin: 6px 0;
+    padding: 8px 8px 8px 24px;
+}
